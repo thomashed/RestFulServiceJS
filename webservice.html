@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script 
+            type="text/javascript" 
+        src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="my.js"></script>
+        
+        
+    </head>
+    <body>
+        <H1>Person Web Service</H1>
+        <button id="showAllButton">Show All</button>
+        <div id="result"></div>
+        
+        <hr>
+        
+        <input type="text" id="personName"/>
+        <input type="number" id="personAge"/>
+        <button id="addPersonButton">Add Person</button>
+        
+        <hr>
+        <input type="number" id="personId"/>
+        <button id="deletePersonButton">Delete Person</button>
+        
+        <script>
+            $("#showAllButton").bind("click", showAllPersons);
+            $("#addPersonButton").bind("click", addPerson);
+            $("#deletePersonButton").bind("click", deletePerson);
+        </script>
+    </body>
+</html>
